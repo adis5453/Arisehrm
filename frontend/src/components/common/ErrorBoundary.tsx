@@ -12,7 +12,6 @@ import {
   Stack,
 } from '@mui/material'
 import { Error as ErrorIcon, Refresh as RefreshIcon, Home as HomeIcon } from '@mui/icons-material'
-import { useNavigate } from 'react-router-dom'
 
 interface Props {
   children: ReactNode
