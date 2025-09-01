@@ -76,14 +76,12 @@ interface ErrorFallbackProps {
 }
 
 const ErrorFallback: React.FC<ErrorFallbackProps> = ({ error, errorInfo }) => {
-  const navigate = useNavigate()
-
   const handleRefresh = () => {
     window.location.reload()
   }
 
   const handleGoHome = () => {
-    navigate('/')
+    window.location.href = '/'
   }
 
   return (
