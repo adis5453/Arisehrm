@@ -25,7 +25,13 @@ export default defineConfig({
   server: {
     port: 3000,
     host: '0.0.0.0',
-    force: true // Force dependency re-optimization
+    force: true, // Force dependency re-optimization
+    allowedHosts: [
+      'hrm-home.preview.emergentagent.com',
+      'localhost',
+      '127.0.0.1',
+      '0.0.0.0'
+    ]
   },
   build: {
     target: 'esnext',
