@@ -14,14 +14,12 @@ export default defineConfig({
     'process.env': {}
   },
   optimizeDeps: {
-    exclude: ['chart.js/auto'], 
+    exclude: ['chart.js/auto', 'chart.js', 'chartjs-adapter-dayjs-4', 'react-chartjs-2'], 
     include: [
-      'chart.js',
-      'chartjs-adapter-dayjs-4',
-      'react-chartjs-2',
       '@mui/material',
       '@mui/icons-material',
-      'framer-motion'
+      'framer-motion',
+      'recharts'
     ]
   },
   server: {
